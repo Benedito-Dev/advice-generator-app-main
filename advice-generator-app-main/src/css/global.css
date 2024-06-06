@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    font-family: Manrope;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 300px;
+}
+
+h1 {
+    color: hsl(150, 100%, 66%);
+    font-size: 24px;
+    padding: 0;
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+p {
+    color: hsl(193, 38%, 86%);
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    transition: 160ms;
+}
+
+button {
+    margin-bottom: -60px;
+    background-color: hsl(150, 100%, 66%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Media Query para largura máxima de 550px */
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+}
